@@ -11,5 +11,9 @@ GET     /sayhi/:name                 controllers.Application.sayhi(name)
 
 GET     /sayhello/:name/:age                 controllers.Application.sayhello(name: String, age: Int)
 
+GET     /addView                      controllers.Application.addView()
+
+GET     /view2                      controllers.Application.view2()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
